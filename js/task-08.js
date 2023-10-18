@@ -2,7 +2,7 @@ const formElem = document.querySelector(".login-form"),
   submitBtn = document.querySelector("button"),
   elements = formElem.elements;
 
-function processForm(event) {
+const processForm = (event) => {
   event.preventDefault();
   if (elements[0].value == "" || elements[1].value == "") {
     alert("All fields must be filled in!");
